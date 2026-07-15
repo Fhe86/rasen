@@ -240,21 +240,59 @@
   }
   .url-line a { color: var(--teal); }
 
-  .reward {
-    background: #eadfc4;
-    border: 1px solid var(--gold);
-    border-radius: 8px;
-    padding: 20px 22px;
-    margin-bottom: 4px;
-  }
-  .reward h3 {
+  .sign-label {
+    text-align: center;
     font-family: Georgia, serif;
     font-style: italic;
-    font-size: 16px;
-    color: var(--rust);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--teal);
     margin: 0 0 10px;
   }
-  .reward p { font-size: 14px; margin: 0; }
+
+  .plaque {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 26px 22px;
+    text-align: center;
+    background: linear-gradient(180deg, #f6ede0, #efe0c4);
+    border: 3px solid var(--rust);
+    border-radius: 10px;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.08);
+  }
+  .rivet {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #e8d9b8, var(--gold) 70%);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  }
+  .plaque-title {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--rust);
+    margin: 0 0 14px;
+  }
+  .plaque-rule {
+    width: 50px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 14px;
+  }
+  .plaque-names {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #6b5a45;
+    letter-spacing: 0.3px;
+    margin: 0;
+  }
 
   .footnote {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -275,8 +313,8 @@
 
     <div class="badge-row"><span class="badge">Operazione Kunstrasen</span></div>
 
-    <h1>Lasst Gras drüber wachsen.</h1>
-    <h2 class="sub">Diesmal ganz wörtlich. Wir holen uns Kunstrasen fürs Lehrerzimmer.</h2>
+    <h1>Kunstrasen für den Lehrerzimmerbalkon</h1>
+    <h2 class="sub">Ein bisschen Riviera-Gefühl für die Pause.</h2>
 
     <div class="scene">
       <div class="hills"></div>
@@ -287,14 +325,14 @@
       <div class="citrus" style="right: 8%;"></div>
     </div>
 
-    <p>Vor dem Lehrerzimmer liegt seit Jahren nur ein blankes Gitter, 3 m mal 3,50 m. Das ändert sich jetzt: Rollrasen soll drüber, genug für eine Pause im Grünen zwischen zwei Stunden. Ein bisschen Riviera-Gefühl statt Gitterrost, mitten in Unterschleißheim.</p>
+    <p>Auf unserem Lehrerzimmerbalkon liegt seit Jahren nur ein blankes Gitter, 3 m mal 3,50 m groß. Jetzt kommt Rollrasen drauf. Dann ist da endlich ein Fleck, auf dem man in der Pause sitzen kann, statt nur drüberzulaufen.</p>
 
     <div class="ticket">
       <span class="label">Wichtiger Hinweis</span>
-      <p>Flo hat den Rasen bereits bestellt. Es gibt kein Zurück mehr. Jetzt müssen wir nur noch das Geld dafür zusammenbekommen.</p>
+      <p>Flo hat den Rasen schon bestellt. Zurück geht also nichts mehr, jetzt müssen wir nur noch das Geld zusammenbekommen.</p>
     </div>
 
-    <p>Rollrasen für die Fläche gibt es im Baumarkt, den genauen Betrag rechnen wir gerade durch. Kommt im Pool mehr zusammen, fließt der Rest in Kissen und Deko, damit aus der Fläche eine richtige kleine Sitzecke wird und nicht nur ein grüner Teppich vor der Tür.</p>
+    <p>Rollrasen für die Fläche gibt's im Baumarkt, den genauen Preis rechnen wir gerade durch. Was im Pool übrig bleibt, geht in Kissen und Deko, damit man da auch wirklich sitzen will.</p>
 
     <div class="divider">
       <span class="line"></span>
@@ -308,9 +346,15 @@
     <p class="url-line">Oder direkt kopieren: <a href="https://www.paypal.com/pool/9qV9QXouDR?sr=wccr">paypal.com/pool/9qV9QXouDR</a></p>
     <p class="footnote">Die meisten legen so 5 bis 10 € rein. Mehr ist niemandem verboten.</p>
 
-    <div class="reward">
-      <h3>Was du dafür bekommst</h3>
-      <p>Jeder, der mitzahlt, wird namentlich auf einem kleinen Schild direkt am Rollrasen verewigt.</p>
+    <p class="sign-label">Kommt aufs Schild</p>
+    <div class="plaque">
+      <span class="rivet" style="top:8px;left:8px;"></span>
+      <span class="rivet" style="top:8px;right:8px;"></span>
+      <span class="rivet" style="bottom:8px;left:8px;"></span>
+      <span class="rivet" style="bottom:8px;right:8px;"></span>
+      <p class="plaque-title">Dieser Rasen wurde gestiftet</p>
+      <div class="plaque-rule"></div>
+      <p class="plaque-names">Name · Name · Name · Name</p>
     </div>
 
   </div>
